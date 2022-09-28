@@ -1,0 +1,23 @@
+
+.img {
+    position: relative;
+    margin-bottom: 4px;
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+}
+
+.loading-new-images-container {
+    padding: 70px;
+    margin: auto;
+    text-align: center;
+    font-size: 18px;
+    color: #aaaaaa;
+}
+
+@keyframes back-to-docs {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(0.35em); }
+    100% { transform: translateY(0); }
+}
+

@@ -1,0 +1,29 @@
+version: '3'
+
+services:
+  backend:
+    image: node:alpine
+    volumes:
+      - ./backend:/app
+    working_dir: /app
+    ports:
+      - "8081:8081"
+    command:
+      - npm
+      - run
+      - start:dev
+  frontend:
+    depends_on:
+      - backend
+    image: node:alpine
+    working_dir: /app
+    volumes:
+      - ./frontend:/app
+    command:
+      - npm
+      - run
+      - start
+    environment:
+      - API_HOST=http://localhost:8081/
+    ports:
+      - "3000:3000"

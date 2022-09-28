@@ -1,0 +1,14 @@
+.image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.item-container {
+    padding: 6px;
+    margin: 8px;
+    background: #dedede;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+}
