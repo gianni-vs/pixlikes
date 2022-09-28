@@ -19,7 +19,7 @@ docker-compose up
 
 4. Now you can reach the web app browsing to ``http://localhost:3000/``
 
-The DB is prefilled with some data, to play with the app.
+The DB is pre-filled with some data, to play with the app.
 Here are the credentials of some account:
 
 | Username           | Password |
@@ -48,9 +48,8 @@ Follows a list of useful configuration variables and how to tweak them:
 * Likes are stored on the backend.
 * Supposing the focus of the test was mostly oriented to the frontend, the backend is really just a mock based on [json-server-auth](https://github.com/jeremyben/json-server-auth), which brings JWT authentication middleware to [json-server](https://github.com/typicode/json-server). All the data is stored in db.json on the backend. 
 * To show other users and allow to view other profiles, I created a fake 'Friends' section that provides links to other profiles. However, in this version there is no way to search for profiles and to add friends.
-* The frontend prevents toggling likes for other users, but a simple check is performed even on the server, as it should.
-* To manage state
-* No real tests have been written except for the most basic one that checks the App renders correctly, runs with ``npm test``
+* The frontend prevents toggling likes for other users, but a simple check is performed even on the server, as it should normally be.
+* No real tests have been written except for the most basic one that tests if the App renders correctly, runs with ``npm test``
 
 ## Future Improvements
 * Full screen image view on click
